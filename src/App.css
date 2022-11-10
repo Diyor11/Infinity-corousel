@@ -1,0 +1,45 @@
+header{
+  height: 50px;
+  background: #13850f;
+}
+
+.hero{
+  background-color: #eee;
+  padding-top: 1rem;
+}
+
+.corousel{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  touch-action: pan-y;
+  overflow: hidden;
+}
+
+.corusel-wrapper{
+  display: flex;
+  align-items: center;
+  transition-property: transform;
+  transition-timing-function: ease-out;
+}
+
+.action-button{
+  position: absolute;
+  top: 50%;
+}
+
+.action-button.prev{
+  translate: 50% -50%;
+  left: 0;
+}
+
+.action-button.next{
+  translate: -50% -50%;
+  right: 0;
+}
+
+.corousel-slide img{
+  width: 100%;
+  cursor: pointer;
+  border-radius: 8px;
+}
